@@ -1,0 +1,16 @@
+.switch-item {
+    @apply relative text-black transition-colors duration-300;
+}
+
+.switch-item::before {
+    @apply bg-current absolute inset-0 opacity-0 rounded transition-opacity duration-300;
+    content: '';
+}
+
+.switch-item.selected {
+    @apply text-current;
+
+    &::before {
+        @apply opacity-10;
+    }
+}

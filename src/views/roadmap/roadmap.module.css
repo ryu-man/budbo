@@ -1,0 +1,21 @@
+.roadmap {
+    --template-columns: 16px 32px 1fr;
+    --template-areas: "a b c";
+
+    --gap: 32px;
+}
+
+.roadmap_item_title {
+    @apply flex;
+    gap: var(--gap);
+}
+
+.roadmap_event {
+    @apply flex;
+    gap: var(--gap);
+
+}
+
+.roadmap_event_title {}
+
+.roadmap_event_desc {}

@@ -1,0 +1,41 @@
+.iphone_simulator {
+    @apply relative;
+
+    --x-offset: 1.3cqh;
+    --y-offset: 1.3cqh;
+}
+
+.notch {
+    display: block;
+    width: 50%;
+    height: 25px;
+    background-color: rgb(253, 253, 254);
+    position: absolute;
+    z-index: 1;
+    top: var(--y-offset, 0px);
+    left: 47%;
+    border-radius: 0px 0px 15px 15px;
+    transform: translateX(-50%);
+}
+
+.placeholder {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+
+}
+
+.screen {
+    z-index: 1;
+    position: relative;
+    border-radius: 4cqh;
+    overflow: hidden;
+    height: 100%;
+
+    width: calc(100% - var(--x-offset, 0px) * 2);
+    height: calc(100% - var(--y-offset, 0px) * 2);
+
+    position: absolute;
+    left: var(--x-offset, 0px);
+    top: var(--y-offset, 0px);
+}

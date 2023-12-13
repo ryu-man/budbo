@@ -1,0 +1,14 @@
+
+.gallery_item {
+    @apply rounded-lg border-2 border-primary;
+}
+
+.md {
+    grid-column: auto / span 2;
+
+}
+
+.lg {
+    grid-column: auto / span 3;
+
+}

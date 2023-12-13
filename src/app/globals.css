@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --budbo-primary-color-values: 110 45 250;
+  --budbo-fade-primary-color-values: 115 107 142;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +28,43 @@
   }
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply w-full h-full p-0 m-0;
+}
+
+body {
+  @apply text-black font-medium font-gilroy text-base;
+
+  background-color: rgb(243, 241, 248);
+}
+
+h1 {
+  @apply font-bold text-[32px] leading-9;
+
+}
+
+h2 {
+  @apply font-bold text-[32px] leading-9;
+}
+
+h3 {
+  @apply font-bold text-2xl;
+}
+
+h4 {
+  @apply font-semibold text-xl
+}
+
+h5 {
+  @apply text-xl font-bold leading-6;
+}
+
+h6 {
+  @apply font-bold text-base;
+}
+
+
+p {
+  @apply text-lg text-rum-700 leading-6;
 }

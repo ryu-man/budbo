@@ -1,0 +1,6 @@
+.h2_with_description {
+
+}
+.h2_with_description>h6 {
+    @apply text-rum-700;
+}

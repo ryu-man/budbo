@@ -1,0 +1,6 @@
+.item {}
+
+
+.description{
+    @apply text-base leading-5;
+}

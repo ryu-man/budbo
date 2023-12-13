@@ -1,0 +1,27 @@
+.paper {
+    @apply bg-white pt-14 pb-9 px-[30px] rounded-l-[48px];
+}
+
+
+.paper-title {
+    @apply relative flex justify-between items-center rounded-lg pl-8 overflow-hidden mb-8 h-[120px];
+}
+
+.paper-title::before {
+    @apply absolute inset-0 bg-current opacity-10;
+
+    content: "";
+}
+
+.paper-section {}
+
+.paper-section>p {
+    @apply text-rum-700;
+}
+
+
+.section-light-header {}
+
+.section-light-header>h6 {
+    @apply text-rum-700;
+}
