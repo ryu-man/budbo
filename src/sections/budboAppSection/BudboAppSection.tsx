@@ -1,4 +1,9 @@
-import { ColorfullItem, IphoneSimulator, PaperSection } from "@/components";
+import {
+	ColorFullContainer,
+	ColorfullItem,
+	IphoneSimulator,
+	PaperSection,
+} from "@/components";
 import clsx from "clsx";
 import Image from "next/image";
 
@@ -24,11 +29,15 @@ import {
 	MedicineIcon,
 	SearchCannabisIcon,
 } from "@/icons";
-import { Switch } from "@/components/switch/Switch";
-import { SwitchItem } from "@/components/switch/SwitchItem";
 
 import TokenMirrorImage from "@/assets/images/token-mirror.svg";
+
 import Background from "@/assets/images/for-app-bg.png";
+import { SlideToMatchImageSwitcher } from "./SlideToMatchImageSwitcher";
+
+import { SwipeToDiscoverImageSwitcher } from "./SwipeToDiscoverImageSwitcher";
+
+import { ImageContainer } from "@/components/container";
 
 export function BudboAppSection() {
 	return (
@@ -45,13 +54,11 @@ export function BudboAppSection() {
 				products, fulfilling our tagline... Smoke Savvy.
 			</p>
 
-			<div className="py-10">
+			<ImageContainer>
 				<Image src={BudboAppImage} alt="Budbo app placeholder" />
-			</div>
+			</ImageContainer>
 
-			<div className="colorfull-container relative px-8 md:px-12 py-10 rounded-[48px] mb-12">
-				<div className="absolute inset-0 z-0 bg-current opacity-10 rounded-inherit" />
-
+			<ColorFullContainer>
 				<div className="relative z-10 flex flex-col">
 					<div className="mb-6">
 						<h6 className="text-primary">BUDBO APP</h6>
@@ -80,27 +87,7 @@ export function BudboAppSection() {
 							personal budtender and cannabis concierge.
 						</p>
 
-						<div className="flex justify-center py-8">
-							<Switch value="desk">
-								<SwitchItem id="desk">DESKTOP</SwitchItem>
-
-								<SwitchItem id="mobile">MOBILE</SwitchItem>
-							</Switch>
-						</div>
-
-						<Image
-							className="hidden"
-							src={SwiperMatch1Image}
-							alt="Slide to match"
-						/>
-
-						<div className="w-fit self-center">
-							<IphoneSimulator
-								screen={BudboMatchGifImage}
-								placeholder={BudboR4Phone2Image}
-								height="565px"
-							/>
-						</div>
+						<SlideToMatchImageSwitcher />
 					</div>
 
 					<div className="mb-12"></div>
@@ -119,30 +106,10 @@ export function BudboAppSection() {
 							prices and delivery times between dispensaries.
 						</p>
 
-						<div className="flex justify-center py-6">
-							<Switch value="desk">
-								<SwitchItem id="desk">DESKTOP</SwitchItem>
-
-								<SwitchItem id="mobile">MOBILE</SwitchItem>
-							</Switch>
-						</div>
-
-						<Image
-							className="hidden"
-							src={SwipeDiscoverImage}
-							alt="Slide to match"
-						/>
-
-						<div className="w-fit self-center">
-							<IphoneSimulator
-								screen={BudboSwipeImage}
-								placeholder={BudboR2Phone1Image}
-								height="565px"
-							/>
-						</div>
+						<SwipeToDiscoverImageSwitcher />
 					</div>
 
-					<h5 className="text-black mt-12 mb-8">What&apos;s inside?</h5>
+					<h5 className="text-black mt-12 sm:mt-8 mb-8">What&apos;s inside?</h5>
 
 					<div className="flex flex-col gap-8">
 						<ColorfullItem
@@ -213,7 +180,7 @@ export function BudboAppSection() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</ColorFullContainer>
 		</div>
 	);
 }

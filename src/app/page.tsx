@@ -66,6 +66,7 @@ import UniswapLogo from "@/assets/images/uniswap-logo.svg";
 import { Team, TeamMemeber } from "@/sections/team";
 
 import { members } from "@/data";
+import { ImageContainer } from "@/components/container";
 
 export default function Home() {
 	return (
@@ -319,12 +320,12 @@ export default function Home() {
 				</Paper>
 
 				<div className="px-4 md:px-6">
-						<h3 className="mb-8">
-							We&apos;re causing
-							<span className="text-primary">quite the buzz...</span>
-						</h3>
+					<h3 className="mb-8">
+						We&apos;re causing
+						<span className="text-primary">quite the buzz...</span>
+					</h3>
 
-						<Articles />
+					<Articles />
 				</div>
 
 				<Paper>
@@ -430,21 +431,19 @@ export default function Home() {
 								</span>{" "}
 								and tokens without having to be tech-savvy.
 							</p>
+							<div className="mt-8">
+								<CTA
+									title="Fortune favors the bold."
+									description="Success begins with a single step. Let's grow your future together."
+									action="Revolutionaries wanted"
+									href="/register"
+								/>
+							</div>
 						</div>
 					</div>
-					P
 				</div>
 
-				<div className="px-3">
-					<CTA
-						title="Fortune favors the bold."
-						description="Success begins with a single step. Let's grow your future together."
-						action="Revolutionaries wanted"
-						href="/register"
-					/>
-				</div>
-
-				<div className="mb-14"></div>
+				{/* <div className="mb-2"></div> */}
 
 				<Paper>
 					<Image className="mb-12" src={UniqueImage} alt="Unique image" />
@@ -459,15 +458,16 @@ export default function Home() {
 					<p>
 						With
 						<span className="text-primary">
+							{" "}
 							263 million cannabis consumers worldwide,
-						</span>
+						</span>{" "}
 						Budbo&apos;s community has tremendous potential for growth. <br />
 						<br />
 						Global sales of legal cannabis totaled
-						<span className="text-primary">$43.72 billion in 2022</span>, and
+						<span className="text-primary"> $43.72 billion in 2022</span>, and
 						are projected to be around $57.18 billion for 2023. Continuing into
 						the future legal cannabis sales are projected at
-						<span className="text-primary">$444.34 billion by 2030</span>,
+						<span className="text-primary"> $444.34 billion by 2030</span>,
 						growing at a <span className="text-primary">CAGR of 34.03%.</span>{" "}
 						<br />
 						<br />
@@ -476,16 +476,21 @@ export default function Home() {
 						over the world.
 					</p>
 
-					<Image src={CannabisImage} alt="" />
+					<ImageContainer>
+						<Image src={CannabisImage} alt="" />
+					</ImageContainer>
 				</Paper>
 
-				<div className="flex flex-col gap-4">
-					<p className="mb-2">
-						Budbo is proud to be a global brand with locations and token holders
-						<span className="text-primary">all over the world.</span>
-					</p>
+				<div className="flex flex-col gap-4 px-8">
+					<div className="px-6 py-6">
+						<p className="mb-2">
+							Budbo is proud to be a global brand with locations and token
+							holders
+							<span className="text-primary"> all over the world.</span>
+						</p>
+					</div>
 
-					<Image src={LocationMapSm} alt="Location map" />
+					<Image className="w-full" src={LocationMapSm} alt="Location map" />
 
 					<div className="px-3">
 						<CTA
@@ -536,7 +541,7 @@ export default function Home() {
 			</div>
 
 			<div className="md:pl-5">
-			<Footer />
+				<Footer />
 			</div>
 		</div>
 	);

@@ -11,11 +11,12 @@ import {
 	SecurityIcon,
 } from "@/icons";
 import { LabsIcon } from "@/icons/LabsIcon";
-import { ColorfullItem } from "@/components";
+import { ColorFullContainer, ColorfullItem } from "@/components";
 import BudboTraxImage from "@/assets/images/trax-bg.jpg";
 
 import TokenMirrorImage from "@/assets/images/token-mirror.svg";
 import Background from "@/assets/images/for-trax-bg.png";
+import { ImageContainer } from "@/components/container";
 
 export function BudboTraxSection() {
 	return (
@@ -33,12 +34,11 @@ export function BudboTraxSection() {
 				precious cargo.
 			</p>
 
-			<div className="my-4">
+			<ImageContainer>
 				<Image src={BudboTraxImage} alt="Budbo Trax" />
-			</div>
+			</ImageContainer>
 
-			<div className="colorfull-container relative px-8 py-8 rounded-[48px] mb-12">
-				<div className="absolute inset-0 z-0 bg-current opacity-10 rounded-inherit" />
+			<ColorFullContainer>
 
 				<div className="z-10 flex flex-col relative gap-0">
 					<div className="flex flex-col gap-2 mb-6">
@@ -57,7 +57,7 @@ export function BudboTraxSection() {
 
 					<h5 className="text-black mb-6">What&apos;s inside?</h5>
 
-					<div className="flex flex-col gap-8">
+					<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
 						<ColorfullItem
 							title="Security"
 							description="Real-time GPS tracking of high value cannabis products on all
@@ -150,7 +150,10 @@ export function BudboTraxSection() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</ColorFullContainer>
+
+			{/* <div className="colorfull-container relative px-8 py-8 rounded-[48px] mb-12">
+			</div> */}
 		</div>
 	);
 }

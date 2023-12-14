@@ -13,7 +13,8 @@ import { LabsIcon } from "@/icons/LabsIcon";
 
 import TokenMirrorImage from "@/assets/images/token-mirror.svg";
 import Background from "@/assets/images/for-connect-bg.png";
-import { ColorfullItem } from "@/components";
+import { ColorFullContainer, ColorfullItem } from "@/components";
+import { ImageContainer } from "@/components/container";
 
 export function BudboConnectSection() {
 	return (
@@ -29,13 +30,13 @@ export function BudboConnectSection() {
 				investment of time.
 			</p>
 
-			<div className="my-8">
+			<ImageContainer>
 				<Image src={BudboConnectImage} alt="Budbo Connect" />
-			</div>
+			</ImageContainer>
 
-			<div className="colorfull-container relative px-8 py-12 rounded-[48px] mb-12">
-				<div className="absolute inset-0 z-0 bg-current opacity-10 rounded-inherit" />
+			<ColorFullContainer>
 
+				
 				<div className="z-10 flex flex-col relative">
 					<div className="flex flex-col gap-2 mb-6">
 						<h6>BUDBO CONNECT</h6>
@@ -121,7 +122,7 @@ export function BudboConnectSection() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</ColorFullContainer>
 		</div>
 	);
 }
