@@ -18,9 +18,9 @@ import Link from "next/link";
 
 export default function Navbar() {
 	return (
-		<nav className="h-[100px] lg:h-[144px] bg-white box-border border-b fixed top-0 left-0 right-0 z-50">
+		<nav className="h-[100px] md:h-[144px] bg-white box-border border-b fixed top-0 left-0 right-0 z-50">
 			<div className="flex flex-col">
-				<div className="hidden justify-between items-center text-xs py-2  px-4 lg:flex border-b font-bold text-rum-700">
+				<div className="hidden justify-between items-center text-xs py-2  px-4 md:flex border-b font-bold text-rum-700">
 					<button className="uppercase hover:underline border px-2 py-1 rounded-md">
 						+ add your location
 					</button>
@@ -65,9 +65,9 @@ export default function Navbar() {
 							/>
 						</Link>
 
-						<button className="flex items-center justify-center gap-2 bg-primary bg-opacity-10 w-12 h-12 rounded-full text-sm md:w-fit md:rounded-lg md:px-6">
+						<button className="flex items-center justify-center gap-2 bg-primary bg-opacity-10 w-12 h-12 rounded-full text-sm sm:w-fit sm:rounded-lg sm:px-6">
 							<Image src={PerfectMatchIcon} alt="Find perfect match" />
-							<div className="font-bold hidden md:block">
+							<div className="font-bold hidden sm:block">
 								Find perfect match
 							</div>
 						</button>
@@ -80,7 +80,7 @@ export default function Navbar() {
 							<Image src={UserIcon} alt="User icon" />
 						</button>
 
-						<button className="bg-primary bg-opacity-5 w-12 h-12  items-center justify-center rounded-full hidden md:flex">
+						<button className="bg-primary bg-opacity-5 w-12 h-12  items-center justify-center rounded-full hidden sm:flex">
 							<Image src={HeartIcon} alt="Heart icon" />
 						</button>
 
