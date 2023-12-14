@@ -1,6 +1,6 @@
 .paper {
-    @apply bg-white pt-14 pb-9 px-[30px] rounded-l-[48px];
-    @apply md:px-12;
+    @apply bg-white pt-14 pb-9 px-8 rounded-l-[48px];
+    @apply sm:px-12 md:pl-12 ;
 }
 
 
