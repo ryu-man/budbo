@@ -1,11 +1,10 @@
-import clsx from 'clsx'
-import style from './container.module.css'
+import style from "./container.module.css";
+import { cn } from "@/utils";
 
-export function Container({ children }) {
-
-    return (
-        <div className={clsx("container", style.container)}>
-            {children}
-        </div>
-    )
+export function Container({ children, className = "" }) {
+	return (
+		<div className={cn("container", style.container, className)}>
+			{children}
+		</div>
+	);
 }

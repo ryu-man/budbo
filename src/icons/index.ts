@@ -21,3 +21,7 @@ export { BlockchainIcon } from "./BlockchainIcon";
 export { CannabisUsersIcon } from "./CannabisUersIcon";
 export { MedicineIcon } from "./MedicineIcon";
 export { SearchCannabisIcon } from "./SearchCannabisIcon";
+export { SearchIcon } from "./SearchIcon";
+export { WalletConnectIcon } from "./WalletConnectIcon";
+export { ExchangeIcon } from "./ExchangeIcon";
+export { OwlFaceIcon } from "./OwlFaceIcon";

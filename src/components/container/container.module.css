@@ -1,3 +1,4 @@
 .container {
-    @apply p-0;
+    @apply p-4 max-w-[540px];
+    @apply md:w-full md:max-w-[720px];
 }

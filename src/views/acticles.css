@@ -1,8 +1,10 @@
-.team {
+.articles {
+    @apply  gap-2;
+
     display: grid;
     grid-template-columns: 1fr;
 
-    @media(min-width: theme('screens.md')){
+    @media(min-width: 768px){
         grid-template-columns: 1fr 1fr;
     }
 }

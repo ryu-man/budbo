@@ -17,7 +17,6 @@ import {
 	BudboAppSection,
 	BudboConnectSection,
 	BudboTraxSection,
-	CTAJoin,
 	JoinBudboSection,
 } from "@/sections";
 
@@ -77,7 +76,7 @@ export default function Home() {
 				<JoinBudboSection />
 			</div>
 
-			<div className="flex flex-col gap-10">
+			<div className="flex flex-col gap-10 md:pl-5">
 				<Paper>
 					<div className="flex flex-col">
 						<div className="mb-4 flex flex-col gap-4">
@@ -268,7 +267,12 @@ export default function Home() {
 						</PaperSection>
 
 						<div className="pb-28">
-							<CTAJoin />
+							<CTA
+								title="Opportunity is knocking"
+								description="Don't miss out on the golden age of cannabis and blockchain."
+								action="Joining Budbo is free"
+								href="/register"
+							/>
 						</div>
 
 						<div>
@@ -314,15 +318,13 @@ export default function Home() {
 					<div></div>
 				</Paper>
 
-				<div className="px-4">
-					<Container>
+				<div className="px-4 md:px-6">
 						<h3 className="mb-8">
 							We&apos;re causing
 							<span className="text-primary">quite the buzz...</span>
 						</h3>
 
 						<Articles />
-					</Container>
 				</div>
 
 				<Paper>
@@ -533,7 +535,9 @@ export default function Home() {
 				</Paper>
 			</div>
 
+			<div className="md:pl-5">
 			<Footer />
+			</div>
 		</div>
 	);
 }

@@ -19,14 +19,20 @@ import tfm from "@/assets/images/articles/tfm.jpg";
 import tnw from "@/assets/images/articles/tnw.jpg";
 import yahoo from "@/assets/images/articles/yahoo.jpg";
 
+import './acticles.css'
+
 export function Articles() {
 	const articles = [
+		techco,
+		yahoo,
 		bitcoinist,
 		btcmanager,
 		businessinsider,
 		cio,
 		coinidol,
 		coinspeaker,
+		technobuffalo,
+		tfm,
 		herb,
 		huffpost,
 		insidebitcoins,
@@ -34,15 +40,11 @@ export function Articles() {
 		newsbtc,
 		steemit,
 		superbcrew,
-		techco,
-		technobuffalo,
-		tfm,
 		tnw,
-		yahoo,
 	];
 
 	return (
-		<div className="articles flex flex-col gap-2">
+		<div className="articles">
 			{articles.map((article, i) => (
 				<Article key={i} src={article} />
 			))}

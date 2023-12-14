@@ -13,7 +13,7 @@ export function TeamMemeber({ member }) {
 				/>
 			</div>
 
-			<div class="flex flex-col items-center gap-1">
+			<div className="flex flex-col items-center gap-1">
 				<h4>{name}</h4>
 				<div className="text-rum-700">{position}</div>
 			</div>

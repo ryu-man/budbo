@@ -49,7 +49,7 @@ export function BudboAppSection() {
 				<Image src={BudboAppImage} alt="Budbo app placeholder" />
 			</div>
 
-			<div className="colorfull-container relative px-8 py-10 rounded-[48px] mb-12">
+			<div className="colorfull-container relative px-8 md:px-12 py-10 rounded-[48px] mb-12">
 				<div className="absolute inset-0 z-0 bg-current opacity-10 rounded-inherit" />
 
 				<div className="relative z-10 flex flex-col">
