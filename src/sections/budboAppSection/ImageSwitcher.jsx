@@ -15,7 +15,7 @@ export function ImageSwitcher({ desktop, mobile, placeholder }) {
 		console.log(value);
 	}
 	return (
-		<div className="image-switch flex flex-col items-center gap-4">
+		<div className="image-switch flex flex-col items-center gap-4 w-full">
 			<div className="flex justify-center py-8">
 				<Switch value="mobile" onChange={onChange}>
 					<SwitchItem id="desktop">DESKTOP</SwitchItem>

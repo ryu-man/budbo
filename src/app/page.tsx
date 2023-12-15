@@ -36,6 +36,10 @@ import BudboR2Phone1Image from "@/assets/images/r2-phone1.png";
 import BudboMatchGifImage from "@/assets/images/home/budbo-match.gif";
 import BudboR4Phone2Image from "@/assets/images/r4-phone2.png";
 
+import BudboR2Phone3Image from "@/assets/images/r2-phone3.png";
+import BudboR4Phone1Image from "@/assets/images/r4-phone1.png";
+import BudboR4Phone3Image from "@/assets/images/r4-phone3.png";
+
 import TokenDashboardImage from "@/assets/images/tokendash.jpg";
 import WorldMapImage from "@/assets/images/world-map.png";
 
@@ -70,7 +74,6 @@ import { members } from "@/data";
 import { ImageContainer } from "@/components/container";
 import { Sidebar } from "@/views/sidebar/Sidebar";
 import { SidebarContainer } from "@/views/sidebar";
-import { LoginDrawer } from "@/views/drawer/LoginDrawer";
 
 export default function Home() {
 	return (
@@ -189,10 +192,12 @@ export default function Home() {
 									products to find that perfect &quot;match&quot;.
 								</p>
 
-								<div className="self-center mt-12 w-fit">
+								<div className="self-center mt-12 w-full">
 									<IphoneSimulator
 										screen={BudboSwipeImage}
 										placeholder={BudboR2Phone1Image}
+										before={BudboR2Phone1Image}
+										after={BudboR2Phone3Image}
 										height="565px"
 									/>
 								</div>
@@ -222,10 +227,12 @@ export default function Home() {
 									in the palm of your hand.
 								</p>
 
-								<div className="self-center mt-12 w-fit">
+								<div className="self-center mt-12 w-full">
 									<IphoneSimulator
 										screen={BudboMatchGifImage}
 										placeholder={BudboR4Phone2Image}
+										before={BudboR4Phone1Image}
+										after={BudboR4Phone3Image}
 										height="565px"
 									/>
 								</div>
@@ -347,13 +354,14 @@ export default function Home() {
 					</SidebarContainer>
 				</div>
 
-				<div className="mx-auto px-4 max-w-[600px] sm:max-w-[1538px] md:max-w-[700px] lg:max-w-[930px] xl:max-w-[900px] 2xl:max-w-[1200px]">
-					<h3 className="mb-8">
-						We&apos;re causing
-						<span className="text-primary"> quite the buzz...</span>
-					</h3>
-
-					<Articles />
+				<div className="paper-grid">
+					<div className="col-span-3 w-full">
+						<h3 className="mb-8">
+							We&apos;re causing
+							<span className="text-primary"> quite the buzz...</span>
+						</h3>
+						<Articles />
+					</div>
 				</div>
 
 				<div className="relative">
@@ -367,6 +375,7 @@ export default function Home() {
 						</div>
 					</Paper>
 					<div className="mb-14"></div>
+
 					<Paper transparent>
 						<h2 className="mb-12">Blockchain and Budbo </h2>
 
@@ -479,6 +488,7 @@ export default function Home() {
 							</div>
 						</div>
 					</Paper>
+
 					<Paper>
 						<Image className="mb-12" src={UniqueImage} alt="Unique image" />
 
@@ -588,7 +598,6 @@ export default function Home() {
 					<SidebarContainer>
 						<Sidebar />
 					</SidebarContainer>
-					P
 				</div>
 			</div>
 

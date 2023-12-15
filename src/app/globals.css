@@ -84,7 +84,7 @@ h6 {
 
 
 p {
-  @apply text-rum-700 leading-7 font-medium md:max-w-[600px];
+  @apply text-rum-700 leading-7 font-medium;
   @apply text-base lg:text-lg;
 
 }
@@ -102,13 +102,13 @@ p {
 .paper-grid {
   @apply pl-8 pr-4;
   @apply sm:px-12 md:pl-12;
-  @apply xl:pl-48 xl:pr-44;
-  @apply 2xl:max-w-[1538px] 2xl:mx-auto;
+  @apply xl:pl-36 xl:pr-32;
+  @apply 2xl:max-w-[1920px] 2xl:mx-auto;
 
   display: grid;
   column-gap: theme('spacing.4');
 
-  @media(min-width: theme('screens.md')) {
+  @media(min-width: theme('screens.lg')) {
     grid-template-columns: 1fr 1fr 350px !important;
   }
 

@@ -1,8 +1,8 @@
 .iphone_simulator {
-    @apply relative;
+    @apply relative flex items-end justify-around w-full gap-4;
 
-    --x-offset: 1.3cqh;
-    --y-offset: 1.3cqh;
+    --x-offset: 12px;
+    --y-offset: 12px;
 }
 
 .notch {
@@ -28,7 +28,7 @@
 .screen {
     z-index: 1;
     position: relative;
-    border-radius: 4cqh;
+    border-radius: 32px;
     overflow: hidden;
     height: 100%;
 

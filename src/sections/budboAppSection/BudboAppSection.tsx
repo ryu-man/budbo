@@ -41,7 +41,7 @@ import { ImageContainer } from "@/components/container";
 
 export function BudboAppSection() {
 	return (
-		<div className="text-violet-600 flex flex-col 2xl:gap-8">
+		<div className="text-violet-600 flex flex-col md:gap-16 2xl:gap-8">
 			<div>
 				<div className="mb-6">
 					<h2 className="text-primary">Budbo App</h2>
@@ -55,19 +55,20 @@ export function BudboAppSection() {
 					cannabis products, fulfilling our tagline... Smoke Savvy.
 				</p>
 			</div>
-
+			
 			<ImageContainer>
 				<Image src={BudboAppImage} alt="Budbo app placeholder" />
 			</ImageContainer>
+
 
 			<ColorFullContainer>
 				<div className="relative z-10 flex flex-col gap-2 lg:gap-8 2xl:gap-16">
 					<div className="flex flex-col">
 						<div className="mb-6">
 							<h6 className="text-primary">BUDBO APP</h6>
-							<h2 className="text-black">
+							<h3 className="text-black">
 								We are the premier online marketplace.
-							</h2>
+							</h3>
 						</div>
 
 						<p className="leading-6">
@@ -83,7 +84,7 @@ export function BudboAppSection() {
 								<span className="text-2xl">
 									<SlidersIcon />
 								</span>
-								<h2>Slide to Match</h2>
+								<h4>Slide to Match</h4>
 							</div>
 
 							<p className="text-center">
@@ -100,7 +101,7 @@ export function BudboAppSection() {
 								<span className="text-2xl">
 									<SwipeIcon />
 								</span>
-								<h2>Swipe to Discover</h2>
+								<h4>Swipe to Discover</h4>
 							</div>
 
 							<p className="leading-6 text-center">

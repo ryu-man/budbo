@@ -41,7 +41,7 @@ export function BudboConnectSection() {
 					<div>
 						<div className="flex flex-col gap-2 mb-6">
 							<h6>BUDBO CONNECT</h6>
-							<h2 className="text-black">We are software-as-a-service.</h2>
+							<h3 className="text-black">We are software-as-a-service.</h3>
 						</div>
 
 						<p className="leading-6 text-lg">
