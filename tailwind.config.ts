@@ -1,23 +1,35 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+	content: [
+		"./node_modules/flowbite-react/**/*.js",
+		"./src/**/*.{js,ts,jsx,tsx,mdx}",
+	],
 	theme: {
+		screens: {
+			sm: "640px",
+			md: "768px",
+			lg: "1024px",
+			xl: "1280px",
+			"2xl": "1536px",
+		},
 		extend: {
-			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-			},
-
 			fontFamily: {
 				gilroy: "var(--font-gilroy)",
 			},
+			fontSize: {
+				base: ["16px", "24px"],
+				h1: ["72px", "88px"],
+				h2: ["56px", "64px"],
+				h3: ["48px", "56px"],
+				h4: ["32px", "40px"],
+				h5: ["24px", "32px"],
+				h6: ["20px", "28px"],
+			},
 			colors: {
-				primary: "rgb(var(--budbo-primary-color-values) / <alpha-value>)",
-				"fade-primary":
-					"rgb(--budbo-fade-primary-color-values) / <alpha-value>)",
-
+				white: "#ffffff",
+				purple: "#6E2DFA",
+				primary: "#6E2DFA",
 				"electric-violet": {
 					"50": "#f3f2ff",
 					"100": "#ebe7ff",
@@ -30,6 +42,32 @@ const config: Config = {
 					"800": "#5016c1",
 					"900": "#43149e",
 					"950": "#270a6b",
+				},
+				"jungle-green": {
+					50: "#effefa",
+					100: "#c7ffef",
+					200: "#90ffdf",
+					300: "#51f7cd",
+					400: "#1de4b8",
+					500: "#04c89f",
+					600: "#00b493",
+					700: "#05806a",
+					800: "#0a6556",
+					900: "#0d5448",
+					950: "#00332d",
+				},
+				"tan-hide": {
+					"50": "#fff7ed",
+					"100": "#ffecd4",
+					"200": "#ffd6a8",
+					"300": "#ffb871",
+					"400": "#ff9644",
+					"500": "#fe6f11",
+					"600": "#ef5407",
+					"700": "#c63d08",
+					"800": "#9d310f",
+					"900": "#7e2b10",
+					"950": "#441206",
 				},
 				rum: {
 					"50": "#f4f4f9",
@@ -44,20 +82,6 @@ const config: Config = {
 					"900": "#514d62",
 					"950": "#302d39",
 				},
-
-				"tan-hide": {
-					"50": "#fff7ed",
-					"100": "#ffecd4",
-					"200": "#ffd6a8",
-					"300": "#ffb871",
-					"400": "#ff9644",
-					"500": "#fe6f11",
-					"600": "#ef5407",
-					"700": "#c63d08",
-					"800": "#9d310f",
-					"900": "#7e2b10",
-					"950": "#441206",
-				},
 				malibu: {
 					"50": "#effaff",
 					"100": "#dff3ff",
@@ -70,6 +94,45 @@ const config: Config = {
 					"800": "#025e8a",
 					"900": "#084e72",
 					"950": "#06314b",
+				},
+				red: {
+					50: "#fff1f0",
+					100: "#ffdfdd",
+					200: "#ffc4c0",
+					300: "#ff9a94",
+					400: "#ff6157",
+					500: "#ff3023",
+					600: "#ff0f00",
+					700: "#d70d00",
+					800: "#b10d03",
+					900: "#92120a",
+					950: "#500500",
+				},
+				"caribbean-green": {
+					50: "#eafff8",
+					100: "#cdfeec",
+					200: "#a0fade",
+					300: "#63f2ce",
+					400: "#26e1b8",
+					500: "#01d9b1",
+					600: "#00a386",
+					700: "#00826e",
+					800: "#006758",
+					900: "#00544a",
+					950: "#00302b",
+				},
+				snuff: {
+					50: "#f8f7fb",
+					100: "#f2f0f7",
+					200: "#e0dbed",
+					300: "#d5cce6",
+					400: "#bdafd6",
+					500: "#a58ec4",
+					600: "#9174b3",
+					700: "#80629f",
+					800: "#6b5186",
+					900: "#58446e",
+					950: "#392c49",
 				},
 				gossamer: {
 					"50": "#ecfdf7",
@@ -84,12 +147,31 @@ const config: Config = {
 					"900": "#064e44",
 					"950": "#022c27",
 				},
+				"white-lilac": {
+					"50": "#f9f8fc",
+					"100": "#f1eff8",
+					"200": "#e6e2f2",
+					"300": "#d2cae8",
+					"400": "#b4a8d8",
+					"500": "#9786c6",
+					"600": "#7e6ab3",
+					"700": "#69569a",
+					"800": "#594980",
+					"900": "#493c67",
+					"950": "#2f2348",
+				},
 			},
-			borderRadius:{
-				'inherit': 'inherit'
-			}
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+				"gradient-conic":
+					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+			},
+			borderRadius: {
+				inherit: "inherit",
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require("flowbite/plugin")],
+	darkMode: "class",
 };
 export default config;
