@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import chrisImage from "@/assets/images/quotes/chris.jpg";
 import { ChevronRightIcon } from "@/icons";
+import { Quote } from "./Quote";
+import { Quotes } from "./Quotes";
 
 export function Sidebar() {
 	return (
@@ -51,35 +53,7 @@ export function Sidebar() {
 				</div>
 			</div>
 
-			<div className="bg-white border-t border-neutral-300 pb-4 flex flex-col gap-8 text-rum-700">
-				<div className="quote flex flex-col px-6 pt-6 gap-6">
-					<div className="flex gap-4">
-						<Image
-							className="w-12 h-12 rounded-full"
-							src={chrisImage}
-							alt="Quote person image"
-						/>
-						<div className="flex flex-col">
-							<div className="font-bold text-black">Chris</div>
-							<div className="text-rum-700">Beach City Hydroponics</div>
-						</div>
-					</div>
-
-					<p className="text-base">
-						Very excited to be partnering up with Budbo and using the Budbo
-						Connect platform!.
-					</p>
-				</div>
-
-				<div className="qutotes-navigation flex justify-between px-20 text-xs">
-					<span className="rotate-180">
-						<ChevronRightIcon />
-					</span>
-					<span>
-						<ChevronRightIcon />
-					</span>
-				</div>
-			</div>
+			<Quotes />
 		</div>
 	);
 }
