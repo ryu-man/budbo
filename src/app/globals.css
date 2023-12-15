@@ -40,16 +40,20 @@ body {
 }
 
 h1 {
-  @apply font-bold text-[32px] leading-9;
+  @apply font-bold text-[45px] leading-[68px];
+  @apply lg:text-[72px] lg:leading-[88px];
 
 }
 
 h2 {
   @apply font-bold text-[32px] leading-9;
+  @apply 2xl:text-[56px] 2xl:leading-[68px];
+
 }
 
 h3 {
   @apply font-bold text-2xl;
+  @apply lg:text-[32px] lg:leading-[38px];
 }
 
 h4 {
@@ -66,5 +70,47 @@ h6 {
 
 
 p {
-  @apply text-lg text-rum-700 leading-6;
+  @apply text-lg text-rum-700 leading-7 font-medium lg:text-xl;
+
+  max-width: 600px;
+}
+
+
+.paper-grid-container {
+  /* @apply  2xl:max-w-[1920px]; */
+
+}
+
+.paper-grid-container .paper-grid {
+  @apply w-full;
+}
+
+.paper-grid {
+  @apply px-8;
+  @apply sm:px-12 md:pl-12;
+  @apply xl:pl-48 xl:pr-44;
+  @apply 2xl:max-w-[1538px] 2xl:mx-auto;
+
+  display: grid;
+  column-gap: theme('spacing.4');
+
+  @media(min-width: theme('screens.md')) {
+    grid-template-columns: 1fr 1fr 350px !important;
+  }
+
+  @media(min-width: theme('screens.md')) {
+    column-gap: theme('spacing.6');
+  }
+
+  @media(min-width: theme('screens.lg')) {
+    column-gap: theme('spacing.10');
+  }
+
+  @media(min-width: theme('screens.xl')) {
+    column-gap: theme('spacing.10');
+  }
+
+  @media(min-width: theme('screens.2xl')) {
+    column-gap: theme('spacing.20');
+  }
 }

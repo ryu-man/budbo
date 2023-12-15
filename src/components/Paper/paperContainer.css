@@ -1,0 +1,5 @@
+.paper-container {
+    @apply pt-14 pb-8 lg:pt-20 lg:pb-10;
+
+    grid-column: 1 / span 2;
+}

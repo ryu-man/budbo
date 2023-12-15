@@ -25,33 +25,35 @@ export default function Navbar() {
 						+ add your location
 					</button>
 
-					<div className="flex items-center gap-2">
-						<span>Convert Prices to</span>
-						<span>
-							<OwlFaceIcon />
-						</span>
-
-						<Toggle />
-					</div>
-
-					<div className="flex gap-1">
-						<div className="flex gap-2">
+					<div className="contents lg:flex gap-8">
+						<div className="flex items-center gap-2">
+							<span>Convert Prices to</span>
 							<span>
-								<ExchangeIcon />
+								<OwlFaceIcon />
 							</span>
-							<span className="text-primary">1 BUDBO</span>
+
+							<Toggle />
 						</div>
 
-						<span> =</span>
-						<span className="text-black">0.15 USDT</span>
-					</div>
+						<div className="flex gap-1">
+							<div className="flex gap-2">
+								<span>
+									<ExchangeIcon />
+								</span>
+								<span className="text-primary">1 BUDBO</span>
+							</div>
 
-					<button className="flex gap-2 hover:underline">
-						<span>Connect Crypto Wallet</span>
-						<span>
-							<WalletConnectIcon />
-						</span>
-					</button>
+							<span> =</span>
+							<span className="text-black">0.15 USDT</span>
+						</div>
+
+						<button className="flex gap-2 hover:underline">
+							<span>Connect Crypto Wallet</span>
+							<span>
+								<WalletConnectIcon />
+							</span>
+						</button>
+					</div>
 				</div>
 
 				<div className="flex items-center justify-between gap-5 py-4  px-4">

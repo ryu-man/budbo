@@ -1,10 +1,15 @@
 import { cn } from "@/utils";
 
-export function Input({ className = "", Pre = undefined, Post = undefined }) {
+export function Input({
+	className = "",
+	placeholder = "",
+	Pre = undefined,
+	Post = undefined,
+}) {
 	return (
 		<div
 			className={cn(
-				"input relative  flex-nowrap border border-neutral-400 rounded-md overflow-hidden h-12 text-black",
+				"input relative  flex-nowrap border border-neutral-200 rounded-md overflow-hidden h-12 text-black bg-white",
 				className
 			)}
 		>
@@ -15,9 +20,13 @@ export function Input({ className = "", Pre = undefined, Post = undefined }) {
 			)}
 
 			<input
-				className={cn("border-none", Pre && "pl-12", Post && "pr-12")}
+				className={cn(
+					"bg-transparent bg-none border-none w-full h-full outline-none",
+					Pre && "pl-12",
+					Post && "pr-12"
+				)}
 				type="text"
-				placeholder="Products, retailers & more..."
+				placeholder={placeholder}
 			/>
 
 			{Post && (

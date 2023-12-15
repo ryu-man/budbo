@@ -39,64 +39,65 @@ export function BudboTraxSection() {
 			</ImageContainer>
 
 			<ColorFullContainer>
+				<div className="z-10 flex flex-col relative gap-0 2xl:gap-16">
+					<div>
+						<div className="flex flex-col gap-2 mb-6">
+							<h6>BUDBO TRAX</h6>
+							<h3 className="text-black">We are peace of mind.</h3>
+						</div>
 
-				<div className="z-10 flex flex-col relative gap-0">
-					<div className="flex flex-col gap-2 mb-6">
-						<h6>BUDBO TRAX</h6>
-						<h2 className="text-black">We are peace of mind.</h2>
+						<p>
+							Dispensaries, growers, labs and other vested parties will have
+							full control and insight into all of their cannabis movements via
+							the Budbo Connect Dashboard. Track single large scale shipments,
+							or multiple drivers out for local deliveries.
+						</p>
 					</div>
 
-					<p>
-						Dispensaries, growers, labs and other vested parties will have full
-						control and insight into all of their cannabis movements via the
-						Budbo Connect Dashboard. Track single large scale shipments, or
-						multiple drivers out for local deliveries.
-					</p>
+					<div className="">
+						<h5 className="text-black mb-6">What&apos;s inside?</h5>
 
-					<div className="mb-12"></div>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+							<ColorfullItem
+								title="Security"
+								description="Real-time GPS tracking of high value cannabis products on all
+			shipments."
+								Icon={SecurityIcon}
+							/>
 
-					<h5 className="text-black mb-6">What&apos;s inside?</h5>
+							<ColorfullItem
+								title="Compliance"
+								description="Shipment documents scanned and stored in the cloud."
+								Icon={ComplianceIcon}
+							/>
 
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-						<ColorfullItem
-							title="Security"
-							description="Real-time GPS tracking of high value cannabis products on all
-								shipments."
-							Icon={SecurityIcon}
-						/>
+							<ColorfullItem
+								title="Flexibility"
+								description="Adjustable geofences and automated alerts."
+								Icon={FlexibilityIcon}
+							/>
+							<ColorfullItem
+								title="Safety"
+								description="Driver “SOS” button to immediately report emergencies to authorities."
+								Icon={SafetyIcon}
+							/>
 
-						<ColorfullItem
-							title="Compliance"
-							description="Shipment documents scanned and stored in the cloud."
-							Icon={ComplianceIcon}
-						/>
+							<ColorfullItem
+								title="Business Intelligence"
+								description="Real-time verifiable pickup and delivery confirmations."
+								Icon={BIIcon}
+							/>
 
-						<ColorfullItem
-							title="Flexibility"
-							description="Adjustable geofences and automated alerts."
-							Icon={FlexibilityIcon}
-						/>
-						<ColorfullItem
-							title="Safety"
-							description="Driver “SOS” button to immediately report emergencies to authorities."
-							Icon={SafetyIcon}
-						/>
-
-						<ColorfullItem
-							title="Business Intelligence"
-							description="Real-time verifiable pickup and delivery confirmations."
-							Icon={BIIcon}
-						/>
-
-						<ColorfullItem
-							title="Peace of mind"
-							description="Confidence of knowing where your product is at all times."
-							Icon={POFIcon}
-						/>
+							<ColorfullItem
+								title="Peace of mind"
+								description="Confidence of knowing where your product is at all times."
+								Icon={POFIcon}
+							/>
+						</div>
 					</div>
 
 					<div className="relative pt-20 px-5 pb-5 ]  rounded-[24px] translate-y-20">
-						<div className="background absolute top-0 left-0 h-full z-0 rounded-inherit flex items-center overflow-hidden">
+						<div className="background absolute top-0 left-0 h-full w-full z-0 rounded-inherit flex items-center overflow-hidden">
 							<div className="bg-current opacity-20 w-full h-full absolute" />
 
 							<Image
@@ -118,7 +119,7 @@ export function BudboTraxSection() {
 								<span className="text-black">is for</span>
 							</h2>
 
-							<div className="flex flex-col gap-6">
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 								<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
 									<span className="text-3xl">
 										<DispensariesIcon />
@@ -151,9 +152,6 @@ export function BudboTraxSection() {
 					</div>
 				</div>
 			</ColorFullContainer>
-
-			{/* <div className="colorfull-container relative px-8 py-8 rounded-[48px] mb-12">
-			</div> */}
 		</div>
 	);
 }

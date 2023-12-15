@@ -13,8 +13,6 @@ export function SwitchItem({ children, id }) {
 
 	const [isSelected, setIsSelected] = useState(_id.current === selected);
 
-	console.log(_id.current);
-
 	useEffect(() => {
 		setIsSelected(_id.current === selected);
 	}, [selected]);

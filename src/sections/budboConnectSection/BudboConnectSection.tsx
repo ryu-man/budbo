@@ -18,57 +18,59 @@ import { ImageContainer } from "@/components/container";
 
 export function BudboConnectSection() {
 	return (
-		<div className="text-tan-hide-400 flex flex-col gap-0">
-			<div className="mb-6">
-				<h2 className="text-current">Budbo Connect</h2>
-				<h5 className="text-black">We help businesses sell more products.</h5>
-			</div>
+		<div className="text-tan-hide-400 flex flex-col gap-0 2xl:gap-16">
+			<div>
+				<div className="mb-6">
+					<h2 className="text-current">Budbo Connect</h2>
+					<h5 className="text-black">We help businesses sell more products.</h5>
+				</div>
 
-			<p>
-				Industry and sales data laid out in a simple and elegant interface
-				empowers cannabis buisnesses to sell more products with a minimal
-				investment of time.
-			</p>
+				<p>
+					Industry and sales data laid out in a simple and elegant interface
+					empowers cannabis buisnesses to sell more products with a minimal
+					investment of time.
+				</p>
+			</div>
 
 			<ImageContainer>
 				<Image src={BudboConnectImage} alt="Budbo Connect" />
 			</ImageContainer>
 
 			<ColorFullContainer>
+				<div className="z-10 flex flex-col relative 2xl:gap-8">
+					<div>
+						<div className="flex flex-col gap-2 mb-6">
+							<h6>BUDBO CONNECT</h6>
+							<h2 className="text-black">We are software-as-a-service.</h2>
+						</div>
 
-				
-				<div className="z-10 flex flex-col relative">
-					<div className="flex flex-col gap-2 mb-6">
-						<h6>BUDBO CONNECT</h6>
-						<h2 className="text-black">We are software-as-a-service.</h2>
+						<p className="leading-6 text-lg">
+							Key analytics provide the final solution for business owners,
+							allowing them to know which strains to grow and exactly which
+							products to stock in order to increase sales, retain customers,
+							and grow revenue.
+						</p>
 					</div>
 
-					<p className="leading-6 text-lg">
-						Key analytics provide the final solution for business owners,
-						allowing them to know which strains to grow and exactly which
-						products to stock in order to increase sales, retain customers, and
-						grow revenue.
-					</p>
+					<div className="">
+						<h5 className="text-black mb-6">
+							With Budbo’s industry analytics and actionable insights, cannabis
+							business owners can easily:
+						</h5>
 
-					<div className="mb-12"></div>
+						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+							<ColorfullItem title="Grow revenue" Icon={ScaleIcon} />
 
-					<h5 className="text-black mb-6">
-						With Budbo’s industry analytics and actionable insights, cannabis
-						business owners can easily:
-					</h5>
+							<ColorfullItem title="Scale and pivot" Icon={PivotIcon} />
 
-					<div className="flex flex-col gap-8">
-						<ColorfullItem title="Grow revenue" Icon={ScaleIcon} />
+							<ColorfullItem title="Attract new customers" Icon={UsersIcon} />
 
-						<ColorfullItem title="Scale and pivot" Icon={PivotIcon} />
-
-						<ColorfullItem title="Attract new customers" Icon={UsersIcon} />
-
-						<ColorfullItem title="Attract new customers" Icon={LoyaltyIcon} />
+							<ColorfullItem title="Attract new customers" Icon={LoyaltyIcon} />
+						</div>
 					</div>
 
 					<div className="relative pt-20 px-5 pb-5  rounded-[24px] translate-y-20">
-						<div className="background absolute top-0 left-0 h-full z-0 rounded-inherit flex items-center overflow-hidden">
+						<div className="background absolute top-0 left-0 h-full w-full z-0 rounded-inherit flex items-center overflow-hidden">
 							<div className="bg-current opacity-20 w-full h-full absolute" />
 
 							<Image
@@ -90,7 +92,7 @@ export function BudboConnectSection() {
 								<span className="text-black">is for</span>
 							</h2>
 
-							<div className="flex flex-col gap-6">
+							<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 								<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
 									<span className="text-3xl">
 										<DispensariesIcon />

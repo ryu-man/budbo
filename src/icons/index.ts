@@ -25,3 +25,5 @@ export { SearchIcon } from "./SearchIcon";
 export { WalletConnectIcon } from "./WalletConnectIcon";
 export { ExchangeIcon } from "./ExchangeIcon";
 export { OwlFaceIcon } from "./OwlFaceIcon";
+export { ChevronLeftIcon } from "./ChevronLeftIcon";
+export { ChevronRightIcon } from "./ChevronRightIcon";

@@ -1,14 +1,24 @@
 .paper {
-    @apply bg-white pt-14 pb-9 px-8 rounded-l-[48px];
-    @apply sm:px-12 md:pl-12 ;
+    @apply bg-white rounded-l-[48px];
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.paper.transparent {
+    @apply bg-transparent py-0;
 }
 
 
 .paper-title {
-    @apply relative flex justify-between items-center rounded-lg pl-8 overflow-hidden mb-8 h-[120px];
+    @apply mb-8;
 }
 
-.paper-title::before {
+.paper-title>.background {
+    @apply relative pl-8 overflow-hidden h-[120px] w-full xl:w-96 rounded-lg;
+}
+
+.paper-title>.background::before {
     @apply absolute inset-0 bg-current opacity-10;
 
     content: "";

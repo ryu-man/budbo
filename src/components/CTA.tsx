@@ -11,7 +11,7 @@ export function CTA({ title, description, href, action }) {
 	return (
 		<div className={cn("cta relative")}>
 			<Image
-				className="absolute inset-0 h-full rounded-3xl"
+				className="absolute inset-0 h-full w-full rounded-3xl"
 				src={NotificationMobileImage}
 				alt="Notification background"
 				style={{ zIndex: "0" }}

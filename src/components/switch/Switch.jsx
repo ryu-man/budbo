@@ -5,7 +5,11 @@ import { cn } from "@/utils";
 import { SwitchContext } from "./context";
 import "./switch.css";
 
-export function Switch({ children = undefined, value = undefined }) {
+export function Switch({
+	children = undefined,
+	value = undefined,
+	onChange = undefined,
+}) {
 	const [selected, setSelected] = useState(value);
 
 	return (
@@ -15,10 +19,15 @@ export function Switch({ children = undefined, value = undefined }) {
 			)}
 		>
 			<SwitchContext.Provider
-				value={{ selectedState: [selected, setSelected] }}
+				value={{ selectedState: [selected, internalSetSelected] }}
 			>
 				{children}
 			</SwitchContext.Provider>
 		</div>
 	);
+
+	function internalSetSelected(id) {
+		setSelected(id);
+		onChange && onChange(id);
+	}
 }
