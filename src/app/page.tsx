@@ -144,7 +144,6 @@ export default function Home() {
 									</p>
 								</PaperHeader>
 
-
 								<Image
 									src={ConnectBackgroundImage}
 									alt="Connect background image"
@@ -211,11 +210,15 @@ export default function Home() {
 
 								<p>
 									Personalize your medicine and experience. Our patent pending
-									<span className="text-primary"> product matching</span> feature
-									revolutionizes how people find the right cannabis products.
+									<span className="text-primary"> product matching</span>{" "}
+									feature revolutionizes how people find the right cannabis
+									products.
 									<br /> <br />
 									We&apos;ve just put
-									<span className="text-primary"> the world&apos;s best budtender </span>
+									<span className="text-primary">
+										{" "}
+										the world&apos;s best budtender{" "}
+									</span>
 									in the palm of your hand.
 								</p>
 
@@ -344,10 +347,10 @@ export default function Home() {
 					</SidebarContainer>
 				</div>
 
-				<div className="px-4 max-w-[600px] sm:max-w-[1538px] md:max-w-[700px] lg:max-w-[964px] xl:max-w-[1100px] 2xl:max-w-[1500px] 2xl:mx-auto">
+				<div className="mx-auto px-4 max-w-[600px] sm:max-w-[1538px] md:max-w-[700px] lg:max-w-[930px] xl:max-w-[900px] 2xl:max-w-[1200px]">
 					<h3 className="mb-8">
 						We&apos;re causing
-						<span className="text-primary">quite the buzz...</span>
+						<span className="text-primary"> quite the buzz...</span>
 					</h3>
 
 					<Articles />
@@ -363,9 +366,7 @@ export default function Home() {
 							<BudboTraxSection />
 						</div>
 					</Paper>
-
 					<div className="mb-14"></div>
-
 					<Paper transparent>
 						<h2 className="mb-12">Blockchain and Budbo </h2>
 
@@ -478,7 +479,6 @@ export default function Home() {
 							</div>
 						</div>
 					</Paper>
-
 					<Paper>
 						<Image className="mb-12" src={UniqueImage} alt="Unique image" />
 
@@ -514,7 +514,6 @@ export default function Home() {
 							<Image src={CannabisImage} alt="" />
 						</ImageContainer>
 					</Paper>
-
 					<Paper transparent>
 						<div className="flex flex-col items-center gap-4">
 							<div className="px-6 py-6">
@@ -550,7 +549,6 @@ export default function Home() {
 							</div>
 						</div>
 					</Paper>
-
 					<Paper>
 						<div className="mb-20">
 							<h6 className="text-rum-700">The future looks bright</h6>
@@ -587,17 +585,16 @@ export default function Home() {
 							))}
 						</Team>
 					</Paper>
-
 					<SidebarContainer>
 						<Sidebar />
 					</SidebarContainer>
+					P
 				</div>
 			</div>
 
 			<div className="md:pl-5">
 				<Footer />
 			</div>
-
 		</div>
 	);
 }

@@ -37,7 +37,7 @@ export function BudboConnectSection() {
 			</ImageContainer>
 
 			<ColorFullContainer>
-				<div className="z-10 flex flex-col relative 2xl:gap-8">
+				<div className="z-10 flex flex-col relative gap-2 lg:gap-8 2xl:gap-8">
 					<div>
 						<div className="flex flex-col gap-2 mb-6">
 							<h6>BUDBO CONNECT</h6>

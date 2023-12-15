@@ -61,7 +61,7 @@ export function BudboAppSection() {
 			</ImageContainer>
 
 			<ColorFullContainer>
-				<div className="relative z-10 flex flex-col 2xl:gap-10">
+				<div className="relative z-10 flex flex-col gap-2 lg:gap-8 2xl:gap-16">
 					<div className="flex flex-col">
 						<div className="mb-6">
 							<h6 className="text-primary">BUDBO APP</h6>

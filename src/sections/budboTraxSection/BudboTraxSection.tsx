@@ -39,7 +39,7 @@ export function BudboTraxSection() {
 			</ImageContainer>
 
 			<ColorFullContainer>
-				<div className="z-10 flex flex-col relative gap-0 2xl:gap-16">
+				<div className="z-10 flex flex-col relative gap-2 lg:gap-8 2xl:gap-16">
 					<div>
 						<div className="flex flex-col gap-2 mb-6">
 							<h6>BUDBO TRAX</h6>
@@ -60,8 +60,7 @@ export function BudboTraxSection() {
 						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 							<ColorfullItem
 								title="Security"
-								description="Real-time GPS tracking of high value cannabis products on all
-			shipments."
+								description="Real-time GPS tracking of high value cannabis products on all shipments."
 								Icon={SecurityIcon}
 							/>
 
