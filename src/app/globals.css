@@ -40,37 +40,52 @@ body {
 }
 
 h1 {
-  @apply font-bold text-[32px] leading-[38px];
+  @apply font-bold text-[32px] leading-[40px];
   @apply lg:text-[72px] lg:leading-[88px];
 
 }
 
 h2 {
-  @apply font-bold text-[32px] leading-9;
-  @apply 2xl:text-[56px] 2xl:leading-[68px];
+  @apply font-bold;
+  @apply text-[32px] leading-[40px];
+  @apply lg:text-[56px] lg:leading-[64px];
 
 }
 
 h3 {
-  @apply font-bold text-2xl;
-  @apply lg:text-[32px] lg:leading-[38px];
+  @apply font-bold;
+  @apply text-[32px] leading-[40px];
+  @apply lg:text-[48px] lg:leading-[56px];
 }
 
 h4 {
-  @apply font-semibold text-xl
+  @apply font-semibold;
+  @apply text-[24px] leading-[32px];
+  @apply lg:text-[32px] lg:leading-[40px];
+
+
 }
 
 h5 {
   @apply text-xl font-bold leading-6;
+  @apply text-[20px] leading-[28px];
+  @apply lg:text-[24px] lg:leading-[32px];
+
+
 }
 
 h6 {
   @apply font-bold text-base;
+  @apply text-[18px] leading-[28px];
+  @apply lg:text-[20px] lg:leading-[28px];
+
+
 }
 
 
 p {
-  @apply text-lg text-rum-700 leading-7 font-medium lg:text-xl md:max-w-[600px];
+  @apply text-rum-700 leading-7 font-medium md:max-w-[600px];
+  @apply text-base lg:text-lg;
 
 }
 
