@@ -31,8 +31,7 @@ export function JoinBudboSection() {
 				style.join_budbo_section
 			)}
 		>
-			<div className="flex flex-col h-full ml-auto w-full pt-16 lg:ml-12 xl:ml-16 2xl:ml-28 max-w-[1440px]">
-
+			<div className="flex flex-col flex-1 h-full pt-16 pr-8 ml-8 md:ml-12 xl:ml-16 2xl:ml-28 max-w-[1440px]">
 				<div className="flex flex-col">
 					<h1 className="mb-12">
 						<span>Move. Maker.</span> <br />
@@ -48,14 +47,14 @@ export function JoinBudboSection() {
 						forged in fire, we are the last of the 47 Rōnin.
 					</p>
 
-					<div className="mb-12"></div>
-
-					<button className="flex items-baseline gap-2 bg-primary text-white py-6 px-20 rounded-lg text-xl font-bold w-fit">
-						<span>Joining Budbo is free </span>
-						<span className="text-[9px]">
-							<ArrowRightIcon />
-						</span>
-					</button>
+					<div className="mt-16">
+						<button className="flex items-baseline gap-2 bg-primary text-white py-7 px-20 rounded-lg text-xl font-bold w-fit hover:bg-electric-violet-700">
+							<span>Joining Budbo is free </span>
+							<span className="text-[9px]">
+								<ArrowRightIcon />
+							</span>
+						</button>
+					</div>
 				</div>
 			</div>
 

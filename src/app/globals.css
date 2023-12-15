@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  @apply font-bold text-[45px] leading-[68px];
+  @apply font-bold text-[32px] leading-[38px];
   @apply lg:text-[72px] lg:leading-[88px];
 
 }
@@ -70,9 +70,8 @@ h6 {
 
 
 p {
-  @apply text-lg text-rum-700 leading-7 font-medium lg:text-xl;
+  @apply text-lg text-rum-700 leading-7 font-medium lg:text-xl md:max-w-[600px];
 
-  max-width: 600px;
 }
 
 
@@ -86,7 +85,7 @@ p {
 }
 
 .paper-grid {
-  @apply px-8;
+  @apply pl-8 pr-4;
   @apply sm:px-12 md:pl-12;
   @apply xl:pl-48 xl:pr-44;
   @apply 2xl:max-w-[1538px] 2xl:mx-auto;

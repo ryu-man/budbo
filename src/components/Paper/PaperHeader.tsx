@@ -17,7 +17,7 @@ export function PaperHeader({
 	return (
 		<div
 			className={cn(
-				"paper-title flex flex-col xl:flex-row items-start xl:items-center gap-12",
+				"paper-title flex flex-col xl:flex-row items-start xl:items-center gap-4",
 				className
 			)}
 		>

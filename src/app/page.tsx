@@ -12,7 +12,7 @@ import {
 	PaperLightHeader,
 	PaperSection,
 } from "@/components";
-import { Articles, Roadmap } from "@/views";
+import { Articles, NavbarWithDrawer, Roadmap } from "@/views";
 import {
 	BudboAppSection,
 	BudboConnectSection,
@@ -70,11 +70,12 @@ import { members } from "@/data";
 import { ImageContainer } from "@/components/container";
 import { Sidebar } from "@/views/sidebar/Sidebar";
 import { SidebarContainer } from "@/views/sidebar";
+import { LoginDrawer } from "@/views/drawer/LoginDrawer";
 
 export default function Home() {
 	return (
 		<div className="budbo-app flex flex-col">
-			<Navbar />
+			<NavbarWithDrawer />
 
 			<div className="pt-[100px] md:pt-[144px]">
 				<JoinBudboSection />
@@ -87,7 +88,7 @@ export default function Home() {
 							<div className="mb-4 flex flex-col gap-4">
 								<h2>
 									Nothing in the world can take the place of
-									<div className="text-primary">persistence.</div>
+									<span className="text-primary"> persistence.</span>
 								</h2>
 
 								<h6>
@@ -113,8 +114,6 @@ export default function Home() {
 										rewards.
 									</p>
 								</PaperHeader>
-
-								<div className="mb-12"></div>
 
 								<div className="relative">
 									<Image
@@ -145,7 +144,6 @@ export default function Home() {
 									</p>
 								</PaperHeader>
 
-								<div className="mb-12"></div>
 
 								<Image
 									src={ConnectBackgroundImage}
@@ -165,8 +163,6 @@ export default function Home() {
 										custody, and fleet management for businesses.
 									</p>
 								</PaperHeader>
-
-								<div className="mb-12"></div>
 
 								<Image
 									className="w-full"
@@ -215,13 +211,11 @@ export default function Home() {
 
 								<p>
 									Personalize your medicine and experience. Our patent pending
-									<span className="text-primary">product matching</span> feature
+									<span className="text-primary"> product matching</span> feature
 									revolutionizes how people find the right cannabis products.
 									<br /> <br />
 									We&apos;ve just put
-									<span className="text-primary">
-										the world&apos;s best budtender
-									</span>
+									<span className="text-primary"> the world&apos;s best budtender </span>
 									in the palm of your hand.
 								</p>
 
@@ -248,7 +242,7 @@ export default function Home() {
 									users. It is our north star, guiding everything we do.
 									<br /> <br />
 									By joining Budbo, users immedialtely begin earning
-									<span className="text-primary">Budbo Token(BUBO)</span>{" "}
+									<span className="text-primary"> Budbo Token(BUBO)</span>{" "}
 									rewards. Equipped with a token dashboard, users can track
 									their rewards and learn about cryptocurrency and blockchain.
 								</p>
@@ -603,6 +597,7 @@ export default function Home() {
 			<div className="md:pl-5">
 				<Footer />
 			</div>
+
 		</div>
 	);
 }
