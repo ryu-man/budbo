@@ -1,4 +1,6 @@
 .login-drawer {
     @apply fixed z-50 right-0 bottom-0 top-[100px] md:top-[144px];
-    @apply bg-white border-l-neutral-300 border-l;
+    @apply bg-white border-l-neutral-300;
+
+    @apply w-full border-l-0 md:w-fit md:border-l;
 }

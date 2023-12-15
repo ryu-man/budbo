@@ -69,29 +69,45 @@ export default function Navbar({ onMenuButtonClick = undefined }) {
 
 						<button className="flex items-center justify-center gap-2 bg-primary bg-opacity-10 w-12 h-12 rounded-full text-sm sm:w-fit sm:rounded-lg sm:px-6">
 							<Image src={PerfectMatchIcon} alt="Find perfect match" />
-							<div className="font-bold hidden sm:block">
+							<div className="font-bold hidden whitespace-nowrap sm:block">
 								Find perfect match
 							</div>
 						</button>
 
-						<Input className="hidden lg:flex" Pre={SearchIcon} />
+						<div className="w-[280px] hidden lg:flex">
+							<Input
+								className="w-full"
+								placeholder="Products, retailers & more..."
+								Pre={SearchIcon}
+							/>
+						</div>
 					</div>
 
-					<div className="flex gap-5">
-						<button className="bg-primary bg-opacity-5 w-12 h-12 flex items-center justify-center rounded-full">
-							<Image src={UserIcon} alt="User icon" />
-						</button>
+					<div className="flex items-center gap-5">
+						<div className="flex items-center gap-2">
+							<button className="bg-primary bg-opacity-5 w-12 h-12 flex items-center justify-center rounded-full">
+								<Image src={UserIcon} alt="User icon" />
+							</button>
+
+							<span className="hidden text-rum-700 xl:inline">Login</span>
+						</div>
 
 						<button className="bg-primary bg-opacity-5 w-12 h-12  items-center justify-center rounded-full hidden sm:flex">
 							<Image src={HeartIcon} alt="Heart icon" />
 						</button>
 
-						<button className="bg-primary  w-12 h-12 flex items-center justify-center rounded-full">
-							<Image src={CartIcon} alt="Cart icon" />
-						</button>
+						<div className="flex items-center gap-2">
+							<button className="bg-primary  w-12 h-12 flex items-center justify-center rounded-full">
+								<Image src={CartIcon} alt="Cart icon" />
+							</button>
+
+							<span className="hidden text-rum-700 whitespace-nowrap lg:inline">
+								0.00 USD
+							</span>
+						</div>
 
 						<button
-							className=" w-fit h-12 flex items-center justify-center rounded-full"
+							className=" w-fit h-12 flex items-center justify-center rounded-full xl:hidden"
 							onClick={onMenuButtonClick}
 						>
 							<HumburgerIcon />
