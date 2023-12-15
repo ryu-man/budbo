@@ -16,7 +16,7 @@ import {
 import { Input, Toggle } from "@/components";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar({ onMenuButtonClick = undefined }) {
 	return (
 		<nav className="h-[100px] md:h-[144px] bg-white box-border border-b fixed top-0 left-0 right-0 z-50">
 			<div className="flex flex-col">
@@ -90,7 +90,10 @@ export default function Navbar() {
 							<Image src={CartIcon} alt="Cart icon" />
 						</button>
 
-						<button className=" w-fit h-12 flex items-center justify-center rounded-full">
+						<button
+							className=" w-fit h-12 flex items-center justify-center rounded-full"
+							onClick={onMenuButtonClick}
+						>
 							<HumburgerIcon />
 						</button>
 					</div>
