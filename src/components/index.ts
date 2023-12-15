@@ -9,6 +9,5 @@ export { Container } from "./container/Container";
 export { CTA } from "./CTA";
 export { Button } from "./Button";
 export { Footer } from "./footer";
-export * from "./colorfullContainer";
 export { Input } from "./input";
 export { Toggle } from './toggle'

@@ -1,4 +1,4 @@
 export * from "./JoinBudboSection";
-export * from './budboAppSection'
-export * from './budboConnectSection'
-export * from './budboTraxSection'
+export * from './IsForSections/budboAppSection'
+export * from './IsForSections/budboConnectSection'
+export * from './IsForSections/budboTraxSection'

@@ -74,6 +74,7 @@ import { members } from "@/data";
 import { ImageContainer } from "@/components/container";
 import { Sidebar } from "@/views/sidebar/Sidebar";
 import { SidebarContainer } from "@/views/sidebar";
+import { IsForSections } from "@/sections/IsForSections";
 
 export default function Home() {
 	return (
@@ -366,13 +367,7 @@ export default function Home() {
 
 				<div className="relative">
 					<Paper>
-						<div className="flex flex-col gap-14 lg:gap-16 xl:gap-20 2xl:gap-32">
-							<BudboAppSection />
-
-							<BudboConnectSection />
-
-							<BudboTraxSection />
-						</div>
+						<IsForSections></IsForSections>
 					</Paper>
 					<div className="mb-14"></div>
 
@@ -428,7 +423,7 @@ export default function Home() {
 									</div>
 								</div>
 
-								<div className="bg-white px-12 py-6 my-6 rounded-[48px]">
+								<div className="bg-white px-12 py-6 md:py-10 lg:py12 xl:py-14 2xl:py-16 my-6 rounded-[48px] flex justify-center">
 									<Image
 										src={Technologies1Image}
 										alt="Budbo technologies"
@@ -462,7 +457,7 @@ export default function Home() {
 									</div>
 								</div>
 
-								<div className="bg-white px-12 py-6 my-6 rounded-[48px]">
+								<div className="bg-white px-12 py-6 md:py-10 lg:py12 xl:py-14 2xl:py-16 my-6 rounded-[48px] flex justify-center">
 									<Image src={TechnologiesMobImage} alt="Budbo technologies" />
 								</div>
 
@@ -525,7 +520,7 @@ export default function Home() {
 						</ImageContainer>
 					</Paper>
 					<Paper transparent>
-						<div className="flex flex-col items-center gap-4">
+						<div className="flex flex-col items-center lg:items-start gap-4">
 							<div className="px-6 py-6">
 								<p className="mb-2">
 									Budbo is proud to be a global brand with locations and token
@@ -546,7 +541,7 @@ export default function Home() {
 								className="w-full hidden sm:block"
 								src={LocationMap}
 								alt="Location map"
-								style={{ minWidth: "calc(100% + 12vw)" }}
+								
 							/>
 
 							<div className="px-3">

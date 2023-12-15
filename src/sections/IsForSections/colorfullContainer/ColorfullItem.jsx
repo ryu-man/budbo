@@ -1,7 +1,7 @@
 import { cn } from "@/utils";
 import style from "./item.module.css";
 
-export function ColorfullItem({ title, description = undefined, Icon }) {
+export function ColorfullItem({ title, description = "", Icon }) {
 	return (
 		<div
 			className={cn(
