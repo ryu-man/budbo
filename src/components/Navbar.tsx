@@ -28,16 +28,17 @@ export default function Navbar({ onMenuButtonClick = undefined }) {
 					<div className="contents lg:flex gap-8">
 						<div className="flex items-center gap-2">
 							<span>Convert Prices to</span>
-							<span>
+							
+							<span className="text-lg inline-flex">
 								<OwlFaceIcon />
 							</span>
 
 							<Toggle />
 						</div>
 
-						<div className="flex gap-1">
-							<div className="flex gap-2">
-								<span>
+						<div className="flex items-center gap-1">
+							<div className="flex items-center gap-2">
+								<span className="inline-flex">
 									<ExchangeIcon />
 								</span>
 								<span className="text-primary">1 BUDBO</span>
@@ -47,9 +48,9 @@ export default function Navbar({ onMenuButtonClick = undefined }) {
 							<span className="text-black">0.15 USDT</span>
 						</div>
 
-						<button className="flex gap-2 hover:underline">
+						<button className="flex items-center gap-2 hover:underline">
 							<span>Connect Crypto Wallet</span>
-							<span>
+							<span className="inline-flex">
 								<WalletConnectIcon />
 							</span>
 						</button>
