@@ -123,8 +123,8 @@ export function BudboTraxSection() {
 							<IsForFooterItem text="Drivers" Icon={SteerIcon} />
 
 							<IsForFooterItem text="Shipers" Icon={DeliveryIcon} />
-							
-							<IsForFooterItem text="Carriers" Icon={CarriersIcon} />
+
+							<IsForFooterItem className="lg:col-span-2" text="Carriers" Icon={CarriersIcon} />
 						</div>
 					</IsForFooter>
 				</div>
