@@ -40,6 +40,16 @@ const quotes = [
 export function Quotes() {
 	const [selectedQuote, setSelectedQuote] = useState(0);
 
+	useEffect(() => {
+		const id = setInterval(() => {
+			setSelectedQuote((selectedQuote + 1) % quotes.length);
+		}, 5 * 1000);
+
+		return () => {
+			clearInterval(id);
+		};
+	});
+
 	return (
 		<div className="bg-white border-t border-neutral-300 pb-4 flex flex-col gap-8 text-rum-700">
 			<div className="realtive h-[164px] w-full">
