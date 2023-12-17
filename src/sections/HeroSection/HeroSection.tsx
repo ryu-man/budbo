@@ -25,9 +25,9 @@ export function HeroSection() {
 	}, []);
 
 	return (
-		<div className="hero flex flex-col  items-start justify-center relative">
+		<div className="hero flex flex-col  items-start relative">
 
-			<div className="flex flex-col w-fit pt-12 2xl:mr-44 2xl:ml-48">
+			<div className="flex flex-col w-fit pt-16 pl-16 md:pl-6 xl:pl-20 3xl:pl-48">
 				<div className="flex flex-col w-full">
 					<h1 className="mb-12">
 						<span>Move. Maker.</span> <br />
