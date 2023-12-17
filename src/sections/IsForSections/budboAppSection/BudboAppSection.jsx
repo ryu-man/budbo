@@ -23,6 +23,7 @@ import { SwipeToDiscoverImageSwitcher } from "./SwipeToDiscoverImageSwitcher";
 import { IsForSection } from "../IsForSection";
 import { IsForHeaderImageContainer } from "../IsForHeaderImageContainer";
 import { IsForFooter } from "../IsForFooter";
+import { IsForFooterItem } from "../IsForFooterItem";
 
 export function BudboAppSection() {
 	return (
@@ -130,28 +131,15 @@ export function BudboAppSection() {
 						</h2>
 
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-4 rounded-xl">
-								<span className="text-3xl">
-									<CannabisUsersIcon />
-								</span>
-								<span className="text-black text-base">Cannabis Users</span>
-							</div>
+							<IsForFooterItem text="Cannabis Users" Icon={CannabisUsersIcon} />
 
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-4 rounded-xl">
-								<span className="text-3xl">
-									<MedicineIcon />
-								</span>
-								<span className="text-black text-base">Medical patients</span>
-							</div>
+							<IsForFooterItem text="Medical patients" Icon={MedicineIcon} />
 
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-4 rounded-xl lg:col-span-2">
-								<span className="text-3xl">
-									<SearchCannabisIcon />
-								</span>
-								<span className="text-black text-base">
-									Anyone interested in cannabis
-								</span>
-							</div>
+							<IsForFooterItem
+								className="lg:col-span-2"
+								text="Anyone interested in cannabis"
+								Icon={SearchCannabisIcon}
+							/>
 						</div>
 					</IsForFooter>
 				</div>
