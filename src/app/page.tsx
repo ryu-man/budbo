@@ -76,11 +76,11 @@ export default function Home() {
 		<div className="budbo-app flex flex-col w-full h-full overflow-x-hidden">
 			<NavbarWithDrawer />
 
-			<div className="pt-[100px] md:pt-[144px] md:pl-5">
+			<div className="pt-[100px] md:pt-[144px] lg:pl-5">
 				<HeroSection />
 			</div>
 
-			<div className="flex flex-col gap-10 md:pl-5">
+			<div className="flex flex-col gap-10 lg:pl-5">
 				<div className="relative">
 					<Paper>
 						<div className="flex flex-col">
