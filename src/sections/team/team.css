@@ -10,7 +10,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @media(min-width: theme('screens.3xl')) {
+    @media(min-width: 1440px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
