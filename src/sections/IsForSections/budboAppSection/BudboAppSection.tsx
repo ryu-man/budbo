@@ -102,7 +102,7 @@ export function BudboAppSection() {
 						<div>
 							<h5 className="text-black sm:mt-8 mb-8">What&apos;s inside?</h5>
 
-							<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<ColorfullItem
 									title="1000s of local dispensaries"
 									Icon={DispensariesIcon}
