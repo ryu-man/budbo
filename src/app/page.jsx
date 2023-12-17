@@ -529,11 +529,11 @@ export default function Home() {
 						</p>
 
 						<ImageContainer>
-							<Image src={CannabisImage} alt="" />
+							<Image className="w-full" src={CannabisImage} alt="" />
 						</ImageContainer>
 					</Paper>
 
-					<div className="flex flex-col lg:items-start gap-8 lg:gap-16 pb-8 lg:pb-16">
+					<div className="flex flex-col lg:items-start gap-8 lg:gap-16 pb-8 lg:pb-16 lg:pt-8">
 						<div className="budbo-container">
 							<div className="paper-grid">
 								<div className="col-span-2">

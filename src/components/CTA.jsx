@@ -17,12 +17,12 @@ export function CTA({ title, description, href, action }) {
 				style={{ zIndex: "0" }}
 			/>
 
-			<div className="inner overflow-hidden flex flex-col gap-8 py-4 px-7 lg:px-12 relative">
+			<div className="inner overflow-hidden flex flex-col gap-8 py-4 px-7 lg:px-12 lg:py-8 relative">
 				<h4>{title}</h4>
 
 				<p>{description}</p>
 
-				<Link className="text-base font-bold w-full" href={href}>
+				<Link className="text-base font-bold w-full 3xl:self-start 3xl:w-fit" href={href}>
 					<Button className="w-full">
 						<span>{action}</span>
 						<span className="text-[9px]">

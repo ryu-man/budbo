@@ -99,7 +99,7 @@ p {
 }
 
 .budbo-container {
-  @apply pl-8 pr-4;
+  @apply pl-8 pr-4 w-full;
   @apply sm:px-12 md:pl-12;
   @apply md:pl-8 md:px-8;
   @apply lg:pl-16 lg:pr-8;
