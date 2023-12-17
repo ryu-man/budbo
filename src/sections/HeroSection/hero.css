@@ -1,0 +1,3 @@
+.hero {
+    height: clamp(650px, 80svh, 800px);
+}

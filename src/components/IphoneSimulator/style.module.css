@@ -1,5 +1,5 @@
 .iphone_simulator {
-    @apply relative flex items-end justify-around w-full gap-4;
+    @apply relative flex items-end justify-between w-full;
 
     --x-offset: 12px;
     --y-offset: 12px;

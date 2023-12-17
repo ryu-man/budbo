@@ -5,7 +5,7 @@ export function ColorfullItem({ title, description = "", Icon }) {
 	return (
 		<div
 			className={cn(
-				"colorfull-item bg-white flex flex-col gap-4 py-8 px-6 rounded-2xl border border-current box-border",
+				"colorfull-item bg-white flex flex-col justify-center gap-4 py-8 px-6 rounded-2xl border border-current box-border",
 				style.item
 			)}
 		>

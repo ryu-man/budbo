@@ -12,7 +12,7 @@ export function Paper({ children, transparent = false }: PaperProps) {
 	return (
 		<div className="paper-grid-container">
 			<div className={cn("paper", transparent && "transparent")}>
-				<div className="paper-grid">
+				<div className="paper-grid budbo-container">
 					<PaperContainer>{children}</PaperContainer>
 				</div>
 			</div>

@@ -13,12 +13,7 @@ import {
 	PaperSection,
 } from "@/components";
 import { Articles, NavbarWithDrawer, Roadmap } from "@/views";
-import {
-	BudboAppSection,
-	BudboConnectSection,
-	BudboTraxSection,
-	JoinBudboSection,
-} from "@/sections";
+import { HeroSection } from "@/sections";
 
 import BuildingAppImage from "@/assets/images/reason1-logo.png";
 import GreenLabelImage from "@/assets/images/reason1-img-square.png";
@@ -78,11 +73,11 @@ import { IsForSections } from "@/sections/IsForSections";
 
 export default function Home() {
 	return (
-		<div className="budbo-app flex flex-col">
+		<div className="budbo-app flex flex-col w-full h-full overflow-x-hidden">
 			<NavbarWithDrawer />
 
-			<div className="pt-[100px] md:pt-[144px]">
-				<JoinBudboSection />
+			<div className="pt-[100px] md:pt-[144px] md:pl-5">
+				<HeroSection />
 			</div>
 
 			<div className="flex flex-col gap-10 md:pl-5">
@@ -119,18 +114,25 @@ export default function Home() {
 									</p>
 								</PaperHeader>
 
-								<div className="relative">
+								<div className="relative h-[520px] md:h-auto overflow-hidden">
 									<Image
-										className="w-full"
+										className="h-full w-full min-w-[652px] absolute md:hidden"
 										src={ReasonOneImage}
 										alt="Green label"
 									/>
 
-									<div
-										className="absolute top-1/2 left-1/2"
-										style={{ transform: "translate(-50%, -50%)" }}
-									>
-										<Image src={GreenLabelImage} alt="Green label" />
+									<Image
+										className="h-full w-full hiddden md:block"
+										src={ReasonOneImage}
+										alt="Green label"
+									/>
+
+									<div className="green-label-image w-fit">
+										<Image
+											className=""
+											src={GreenLabelImage}
+											alt="Green label"
+										/>
 									</div>
 								</div>
 							</PaperSection>
@@ -148,10 +150,17 @@ export default function Home() {
 									</p>
 								</PaperHeader>
 
-								<Image
-									src={ConnectBackgroundImage}
-									alt="Connect background image"
-								/>
+								<div className="relative h-[520px] md:h-auto overflow-hidden">
+									<Image
+										className="h-full w-full min-w-[652px] absolute right-0 md:hidden"
+										src={ConnectBackgroundImage}
+										alt="Connect background image"
+									/>
+									<Image
+										src={ConnectBackgroundImage}
+										alt="Connect background image"
+									/>
+								</div>
 							</PaperSection>
 
 							<PaperSection className="border-b">
@@ -166,12 +175,18 @@ export default function Home() {
 										custody, and fleet management for businesses.
 									</p>
 								</PaperHeader>
-
-								<Image
-									className="w-full"
-									src={TraxBackgroundImage}
-									alt="Trax background image"
-								/>
+								<div className="relative h-[520px] md:h-auto overflow-hidden">
+									<Image
+										className="h-full w-full min-w-[652px] absolute md:hidden"
+										src={TraxBackgroundImage}
+										alt="Green label"
+									/>
+									<Image
+										className="w-full"
+										src={TraxBackgroundImage}
+										alt="Trax background image"
+									/>
+								</div>
 							</PaperSection>
 
 							<PaperSection className="border-b">
@@ -193,7 +208,7 @@ export default function Home() {
 									products to find that perfect &quot;match&quot;.
 								</p>
 
-								<div className="self-center mt-12 w-full">
+								<div className="self-center mt-16 w-full">
 									<IphoneSimulator
 										screen={BudboSwipeImage}
 										placeholder={BudboR2Phone1Image}
@@ -228,7 +243,7 @@ export default function Home() {
 									in the palm of your hand.
 								</p>
 
-								<div className="self-center mt-12 w-full">
+								<div className="self-center mt-16 w-full">
 									<IphoneSimulator
 										screen={BudboMatchGifImage}
 										placeholder={BudboR4Phone2Image}
@@ -355,7 +370,7 @@ export default function Home() {
 					</SidebarContainer>
 				</div>
 
-				<div className="paper-grid">
+				<div className="paper-grid budbo-container">
 					<div className="col-span-3 w-full">
 						<h3 className="mb-8">
 							We&apos;re causing
@@ -519,41 +534,48 @@ export default function Home() {
 							<Image src={CannabisImage} alt="" />
 						</ImageContainer>
 					</Paper>
-					<Paper transparent>
-						<div className="flex flex-col items-center lg:items-start gap-4">
-							<div className="px-6 py-6">
-								<p className="mb-2">
-									Budbo is proud to be a global brand with locations and token
-									holders
-									<span className="text-primary"> all over the world.</span>
-								</p>
-							</div>
 
-							<div>
-								<Image
-									className="w-full sm:hidden"
-									src={LocationMapSm}
-									alt="Location map"
-								/>
-							</div>
+					<div className="flex flex-col lg:items-start gap-8 lg:gap-16 pb-8 lg:pb-16">
+						<div className="budbo-container">
+							<div className="paper-grid">
+								<div className="col-span-2">
+									<div className="px-6 py-6">
+										<p className="mb-2">
+											Budbo is proud to be a global brand with locations and
+											token holders
+											<span className="text-primary"> all over the world.</span>
+										</p>
+									</div>
 
-							<Image
-								className="w-full hidden sm:block"
-								src={LocationMap}
-								alt="Location map"
-								
-							/>
-
-							<div className="px-3">
-								<CTA
-									title="As the industry grows, your future can surely blossom with it."
-									description="Grow a future in cannabis and blockchain with Budbo."
-									action="Seize the day: Join Budbo for free"
-									href="/register"
-								/>
+									<Image
+										className="w-full hidden sm:block"
+										src={LocationMap}
+										alt="Location map"
+									/>
+								</div>
 							</div>
 						</div>
-					</Paper>
+
+						<Image
+							className="w-full sm:hidden"
+							src={LocationMapSm}
+							alt="Location map"
+						/>
+
+						<div className="budbo-container">
+							<div className="paper-grid">
+								<div className="px-3 col-span-2">
+									<CTA
+										title="As the industry grows, your future can surely blossom with it."
+										description="Grow a future in cannabis and blockchain with Budbo."
+										action="Seize the day: Join Budbo for free"
+										href="/register"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<Paper>
 						<div className="mb-20">
 							<h6 className="text-rum-700">The future looks bright</h6>

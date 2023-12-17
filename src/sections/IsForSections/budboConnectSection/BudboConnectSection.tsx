@@ -38,35 +38,40 @@ export function BudboConnectSection() {
 			</IsForHeaderImageContainer>
 
 			<ColorFullContainer>
-				<div className="z-10 flex flex-col relative gap-2 lg:gap-8 2xl:gap-8">
-					<div>
-						<div className="flex flex-col gap-2 mb-6">
-							<h6>BUDBO CONNECT</h6>
-							<h3 className="text-black">We are software-as-a-service.</h3>
+				<div className="z-10 flex flex-col relative gap-12 lg:gap-8 2xl:gap-8">
+					<div className="flex flex-col gap-inherit 3xl:px-16">
+						<div>
+							<div className="flex flex-col gap-2 mb-6">
+								<h6>BUDBO CONNECT</h6>
+								<h3 className="text-black">We are software-as-a-service.</h3>
+							</div>
+
+							<p className="leading-6 text-lg">
+								Key analytics provide the final solution for business owners,
+								allowing them to know which strains to grow and exactly which
+								products to stock in order to increase sales, retain customers,
+								and grow revenue.
+							</p>
 						</div>
 
-						<p className="leading-6 text-lg">
-							Key analytics provide the final solution for business owners,
-							allowing them to know which strains to grow and exactly which
-							products to stock in order to increase sales, retain customers,
-							and grow revenue.
-						</p>
-					</div>
+						<div className="">
+							<h5 className="text-black mb-6">
+								With Budbo’s industry analytics and actionable insights,
+								cannabis business owners can easily:
+							</h5>
 
-					<div className="">
-						<h5 className="text-black mb-6">
-							With Budbo’s industry analytics and actionable insights, cannabis
-							business owners can easily:
-						</h5>
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<ColorfullItem title="Grow revenue" Icon={ScaleIcon} />
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-							<ColorfullItem title="Grow revenue" Icon={ScaleIcon} />
+								<ColorfullItem title="Scale and pivot" Icon={PivotIcon} />
 
-							<ColorfullItem title="Scale and pivot" Icon={PivotIcon} />
+								<ColorfullItem title="Attract new customers" Icon={UsersIcon} />
 
-							<ColorfullItem title="Attract new customers" Icon={UsersIcon} />
-
-							<ColorfullItem title="Attract new customers" Icon={LoyaltyIcon} />
+								<ColorfullItem
+									title="Attract new customers"
+									Icon={LoyaltyIcon}
+								/>
+							</div>
 						</div>
 					</div>
 
@@ -76,7 +81,7 @@ export function BudboConnectSection() {
 							<span className="text-black">is for</span>
 						</h2>
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 							<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
 								<span className="text-3xl">
 									<DispensariesIcon />

@@ -30,7 +30,7 @@
 
 html,
 body {
-  @apply w-full h-full p-0 m-0;
+  @apply w-full h-full p-0 m-0 overflow-hidden;
 }
 
 body {
@@ -38,6 +38,15 @@ body {
 
   background-color: rgb(243, 241, 248);
 }
+
+/* div {
+  @apply relative;
+
+  &::after {
+    @apply absolute inset-0 border border-red-600 pointer-events-none;
+    content: "";
+  }
+} */
 
 h1 {
   @apply font-bold text-[32px] leading-[40px];
@@ -85,8 +94,17 @@ h6 {
 
 p {
   @apply text-rum-700 leading-7 font-medium;
-  @apply text-base lg:text-lg;
+  @apply text-lg lg:text-xl;
 
+}
+
+.budbo-container {
+  @apply pl-8 pr-4;
+  @apply sm:px-12 md:pl-12;
+  @apply md:pl-8 md:px-8;
+  @apply lg:pl-16 lg:pr-8;
+  @apply xl:pl-48 xl:pr-40;
+  @apply 2xl:pr-40;
 }
 
 
@@ -100,10 +118,6 @@ p {
 }
 
 .paper-grid {
-  @apply pl-8 pr-4;
-  @apply sm:px-12 md:pl-12;
-  @apply xl:pl-36 xl:pr-32;
-  @apply 2xl:max-w-[1920px] 2xl:mx-auto;
 
   display: grid;
   column-gap: theme('spacing.4');
@@ -117,7 +131,7 @@ p {
   }
 
   @media(min-width: theme('screens.lg')) {
-    column-gap: theme('spacing.10');
+    column-gap: theme('spacing.4');
   }
 
   @media(min-width: theme('screens.xl')) {
@@ -125,6 +139,24 @@ p {
   }
 
   @media(min-width: theme('screens.2xl')) {
-    column-gap: theme('spacing.20');
+    column-gap: theme('spacing.36');
+  }
+}
+
+
+.green-label-image {
+  @apply absolute top-1/2 h-full w-max;
+
+  right: 308px;
+  transform: translate(50%, -50%);
+
+  @media (min-width: theme('screens.md')) {
+    @apply bottom-0 right-0 h-fit;
+
+    top: unset;
+    left: unset;
+    transform: translate(27%, 0);
+
+    width: 257px;
   }
 }

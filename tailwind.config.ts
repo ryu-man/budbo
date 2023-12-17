@@ -12,8 +12,12 @@ const config: Config = {
 			lg: "1024px",
 			xl: "1280px",
 			"2xl": "1536px",
+			"3xl": "1920px",
 		},
 		extend: {
+			screens: {
+				// "3xl": "1920x",
+			},
 			fontFamily: {
 				gilroy: "var(--font-gilroy)",
 			},
@@ -25,6 +29,9 @@ const config: Config = {
 				h4: ["32px", "40px"],
 				h5: ["24px", "32px"],
 				h6: ["20px", "28px"],
+			},
+			spacing: {
+				inherit: "inherit",
 			},
 			colors: {
 				white: "#ffffff",

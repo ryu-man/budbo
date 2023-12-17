@@ -1,0 +1,16 @@
+.team {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media(min-width: theme('screens.md')) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(min-width: theme('screens.xl')) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media(min-width: theme('screens.3xl')) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

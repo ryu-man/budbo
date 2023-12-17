@@ -20,7 +20,7 @@ export default function Navbar({ onMenuButtonClick = undefined }) {
 	return (
 		<nav className="h-[100px] md:h-[144px] bg-white box-border border-b fixed top-0 left-0 right-0 z-50">
 			<div className="flex flex-col">
-				<div className="hidden justify-between items-center text-xs py-2  px-4 md:flex border-b font-bold text-rum-700">
+				<div className="hidden h-11 justify-between items-center text-xs py-2  px-4 md:flex border-b font-bold text-rum-700">
 					<button className="uppercase hover:underline border px-2 py-1 rounded-md">
 						+ add your location
 					</button>

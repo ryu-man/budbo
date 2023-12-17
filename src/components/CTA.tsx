@@ -17,8 +17,8 @@ export function CTA({ title, description, href, action }) {
 				style={{ zIndex: "0" }}
 			/>
 
-			<div className="inner overflow-hidden flex flex-col gap-8 py-12 px-7 lg:px-12 relative">
-				<h2>{title}</h2>
+			<div className="inner overflow-hidden flex flex-col gap-8 py-4 px-7 lg:px-12 relative">
+				<h4>{title}</h4>
 
 				<p>{description}</p>
 
@@ -33,7 +33,7 @@ export function CTA({ title, description, href, action }) {
 			</div>
 
 			<Image
-				className="absolute top-full right-0 -translate-y-[72px] translate-x-5"
+				className="absolute top-full right-0 -translate-y-[72px] translate-x-5 z-10"
 				src={OwlImage}
 				alt="owl"
 			/>

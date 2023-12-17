@@ -7,7 +7,7 @@ import { SwitchItem } from "@/components/switch/SwitchItem";
 import Image from "next/image";
 import { useState } from "react";
 
-export function ImageSwitcher({ desktop, mobile, placeholder }) {
+export function ImageSwitcher({ desktop, mobile, placeholder, after, before }) {
 	const [view, setView] = useState("mobile");
 
 	function onChange(value) {
@@ -29,11 +29,13 @@ export function ImageSwitcher({ desktop, mobile, placeholder }) {
 			)}
 
 			{view === "mobile" && (
-				<div className="w-fit self-center">
+				<div className="w-full self-center">
 					<IphoneSimulator
 						screen={mobile}
 						placeholder={placeholder}
 						height="565px"
+						after={after}
+						before={before}
 					/>
 				</div>
 			)}

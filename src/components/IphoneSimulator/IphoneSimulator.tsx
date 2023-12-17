@@ -19,15 +19,17 @@ export function IphoneSimulator({
 }: IphoneSimulatorProps) {
 	return (
 		<div
-			className={cn("iphone-simulator", style.iphone_simulator)}
+			className={cn("iphone-simulator gap-4", style.iphone_simulator)}
 			style={{ width, height }}
 		>
 			{before && (
-				<Image
-					className="hidden  lg:w-[96px] lg:h-fit h-[70%] w-auto md:block shrink"
-					src={before}
-					alt=""
-				/>
+				<div className="flex-1 max-w-[250px]">
+					<Image
+						className="hidden w-full h-auto md:block shrink"
+						src={before}
+						alt=""
+					/>
+				</div>
 			)}
 
 			<div className="relative flex h-full shrink-0">
@@ -53,11 +55,13 @@ export function IphoneSimulator({
 			</div>
 
 			{after && (
-				<Image
-					className="hidden  lg:w-[96px] lg:h-fit h-[70%] w-auto md:block shrink"
-					src={after}
-					alt=""
-				/>
+				<div className="flex-1 max-w-[250px]">
+					<Image
+						className="hidden w-full h-full  max-h-[60%] md:block shrink"
+						src={after}
+						alt=""
+					/>
+				</div>
 			)}
 		</div>
 	);
