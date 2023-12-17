@@ -1,7 +1,9 @@
 import Image from "next/image";
 import {
 	BIIcon,
+	CarriersIcon,
 	ComplianceIcon,
+	DeliveryIcon,
 	DispensariesIcon,
 	FlexibilityIcon,
 	GrowersIcon,
@@ -9,6 +11,7 @@ import {
 	POFIcon,
 	SafetyIcon,
 	SecurityIcon,
+	SteerIcon,
 } from "@/icons";
 import { LabsIcon } from "@/icons/LabsIcon";
 import { ColorFullContainer, ColorfullItem } from "../colorfullContainer";
@@ -18,6 +21,7 @@ import background from "@/assets/images/for-trax-bg.png";
 import { IsForSection } from "../IsForSection";
 import { IsForHeaderImageContainer } from "../IsForHeaderImageContainer";
 import { IsForFooter } from "../IsForFooter";
+import { IsForFooterItem } from "../IsForFooterItem";
 
 export function BudboTraxSection() {
 	return (
@@ -107,33 +111,20 @@ export function BudboTraxSection() {
 						</h2>
 
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
-								<span className="text-3xl">
-									<DispensariesIcon />
-								</span>
-								<span className="text-black text-base">Dispensaries</span>
-							</div>
 
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
-								<span className="text-3xl">
-									<GrowersIcon />
-								</span>
-								<span className="text-black text-base">Growers</span>
-							</div>
+							<IsForFooterItem text="Dispensaries" Icon={DispensariesIcon} />
 
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
-								<span className="text-3xl">
-									<LabsIcon />
-								</span>
-								<span className="text-black text-base">Labs</span>
-							</div>
+							<IsForFooterItem text="Growers" Icon={GrowersIcon} />
 
-							<div className="bg-white flex justify-center items-center gap-4 py-4 px-6 rounded-xl">
-								<span className="text-3xl">
-									<ManufacturersIcon />
-								</span>
-								<span className="text-black text-base">Manufacturers</span>
-							</div>
+							<IsForFooterItem text="Labs" Icon={LabsIcon} />
+
+							<IsForFooterItem text="Manufacturers" Icon={ManufacturersIcon} />
+
+							<IsForFooterItem text="Drivers" Icon={SteerIcon} />
+
+							<IsForFooterItem text="Shipers" Icon={DeliveryIcon} />
+							
+							<IsForFooterItem text="Carriers" Icon={CarriersIcon} />
 						</div>
 					</IsForFooter>
 				</div>

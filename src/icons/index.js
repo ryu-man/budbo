@@ -27,3 +27,5 @@ export { ExchangeIcon } from "./ExchangeIcon";
 export { OwlFaceIcon } from "./OwlFaceIcon";
 export { ChevronLeftIcon } from "./ChevronLeftIcon";
 export { ChevronRightIcon } from "./ChevronRightIcon";
+export { SteerIcon } from './SteerIcon'
+export { CarriersIcon } from './CarriersIcon'
