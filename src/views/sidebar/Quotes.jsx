@@ -7,7 +7,8 @@ import chrisImage from "@/assets/images/quotes/chris.jpg";
 import ginaImage from "@/assets/images/quotes/gina.jpg";
 import isaacImage from "@/assets/images/quotes/isaac.jpg";
 import skyImage from "@/assets/images/quotes/sky.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Dots } from "./Dots";
 
 const quotes = [
 	{
@@ -58,12 +59,14 @@ export function Quotes() {
 					className="rotate-180"
 					onClick={() => {
 						const index = selectedQuote - 1;
-                        console.log(index)
+						console.log(index);
 						setSelectedQuote(index < 0 ? quotes.length - 1 : index);
 					}}
 				>
 					<ChevronRightIcon />
 				</button>
+
+				<Dots length={quotes.length} active={selectedQuote} />
 
 				<button
 					onClick={() => {
