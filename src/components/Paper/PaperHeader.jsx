@@ -1,19 +1,7 @@
-import Image, { StaticImageData } from "next/image";
-import clsx from "clsx";
+import Image from "next/image";
 import { cn } from "@/utils";
 
-type PaperProps = {
-	title: string;
-	image: StaticImageData;
-	className?: string;
-};
-
-export function PaperHeader({
-	title,
-	image,
-	className = "",
-	children,
-}: PaperProps) {
+export function PaperHeader({ title, image, className = "", children }) {
 	return (
 		<div
 			className={cn(
@@ -21,11 +9,7 @@ export function PaperHeader({
 				className
 			)}
 		>
-			<div
-				className={cn(
-					"background flex items-center gap-8 min-w-fit"
-				)}
-			>
+			<div className={cn("background flex items-center gap-8 min-w-fit")}>
 				<div className="text-current font-bold text-xl whitespace-nowrap flex-1">
 					{title}:
 				</div>

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import Lottie from "lottie-web";
-import { cn } from "@/utils";
 import { ArrowRightIcon } from "@/icons/ArrowRightIcon";
 import mainAnimation from "./main-animation.json";
 import "./hero.css";

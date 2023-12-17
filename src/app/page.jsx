@@ -1,12 +1,10 @@
 import Image from "next/image";
 import {
 	CTA,
-	Container,
 	Footer,
 	Gallery,
 	GalleryItem,
 	IphoneSimulator,
-	Navbar,
 	Paper,
 	PaperHeader,
 	PaperLightHeader,

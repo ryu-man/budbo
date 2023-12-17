@@ -1,13 +1,6 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import style from "./style.module.css";
 import { cn } from "@/utils";
-
-type IphoneSimulatorProps = {
-	width?: string;
-	height?: string;
-	screen: StaticImageData | string;
-	placeholder: StaticImageData | string;
-};
 
 export function IphoneSimulator({
 	screen,
@@ -16,7 +9,7 @@ export function IphoneSimulator({
 	height = "auto",
 	before = undefined,
 	after = undefined,
-}: IphoneSimulatorProps) {
+}) {
 	return (
 		<div
 			className={cn("iphone-simulator gap-4", style.iphone_simulator)}
