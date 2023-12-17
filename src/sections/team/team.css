@@ -14,3 +14,11 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+
+.team .team-member {
+
+    @media(min-width:1280px) and (max-width: 1439px) {
+        @apply last:col-span-2;
+    }
+}
