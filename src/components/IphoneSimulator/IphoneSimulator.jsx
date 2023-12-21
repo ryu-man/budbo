@@ -16,16 +16,12 @@ export function IphoneSimulator({
 			style={{ width, height }}
 		>
 			{before && (
-				<div className="flex-1 max-w-[250px]">
-					<Image
-						className="hidden w-full h-auto md:block shrink"
-						src={before}
-						alt=""
-					/>
+				<div className="flex-1 max-w-[250px] hidden w-full md:block shrink">
+					<Image className="h-auto" src={before} alt="" />
 				</div>
 			)}
 
-			<div className="relative flex h-full shrink-0">
+			<div className="relative flex h-full shrink-0 mx-auto">
 				<div className={cn("screen", style.screen)}>
 					<Image
 						src={screen}
@@ -48,12 +44,8 @@ export function IphoneSimulator({
 			</div>
 
 			{after && (
-				<div className="flex-1 max-w-[250px]">
-					<Image
-						className="hidden w-full h-full  max-h-[60%] md:block shrink"
-						src={after}
-						alt=""
-					/>
+				<div className="flex-1 max-w-[250px] hidden w-full md:block shrink">
+					<Image className="w-full h-full" src={after} alt="" />
 				</div>
 			)}
 		</div>
